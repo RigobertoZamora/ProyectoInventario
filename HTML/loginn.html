@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/funciones.js"></script>
+  </head>
+  <body>
+    <div class="login-box">
+      <form name="formulario" method="post" action="../PHP/mostrar_datos.php">
+      <a href="#" onclick="window.history.back();">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Regresar
+      </a>
+      <br><br><br>
+        <div class="user-box">
+          <input
+            type="text"
+            id="correo"
+            name="correo"
+            placeholder="Ingresa tu correo"
+          />
+          <label for="correo">Correo electr&oacute;nico:</label>
+        </div>
+        <div class="user-box">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Ingresa tu Contrase&nacute;a"
+          />
+          <label for="password">Contrase&nacute;a:</label>
+        </div>
+        <a href="#" onclick="validarUsuario();">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Iniciar Sesion
+        </a>
+      </form>
+    </div>
+  </body>
+</html>
